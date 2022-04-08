@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index'])->name('home');
+Route::get('/about', [IndexController::class, 'about'])->name('about');
+Route::get('/contact-us', [IndexController::class, 'contact'])->name('contact-us');
+Route::post('/contact-us', [IndexController::class, 'mail']);
+
+Route::post('/track', [InvoiceController::class, 'track']);
+Route::get('/track/{invoice}', [InvoiceController::class, 'show']);
+Route::get('/manage-invoices/{invoice}/export', [InvoiceController::class, 'exportPDF'])->name('invoices.export');
+Route::get('/manage-invoices/{invoice}/preview', [InvoiceController::class, 'previewPDF'])->name('invoices.preview');
+
+
+Route::get('/manage-invoices', [InvoiceController::class, 'index'])->name('invoices.index');
+Route::get('/manage-invoices/create', [InvoiceController::class, 'create'])->name('invoices.create');
+Route::post('/manage-invoices/create', [InvoiceController::class, 'new']);
+Route::get('/manage-invoices/{invoice}', [InvoiceController::class, 'edit'])->name('invoices.edit');
+Route::put('/manage-invoices/{invoice}', [InvoiceController::class, 'update']);
+Route::get('/manage-invoices/histories/{invoice}', [InvoiceController::class, 'histories'])->name('invoices.histories');
+Route::post('/manage-invoices/histories/{invoice}', [InvoiceController::class, 'addHistory']);
+Route::delete('/manage-invoices/histories/{history}', [InvoiceController::class, 'deleteHistory']);
+
+require __DIR__.'/auth.php';
