@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,5 +35,8 @@ Route::put('/manage-invoices/{invoice}', [InvoiceController::class, 'update']);
 Route::get('/manage-invoices/histories/{invoice}', [InvoiceController::class, 'histories'])->name('invoices.histories');
 Route::post('/manage-invoices/histories/{invoice}', [InvoiceController::class, 'addHistory']);
 Route::delete('/manage-invoices/histories/{history}', [InvoiceController::class, 'deleteHistory']);
+
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
+Route::post('/settings/', [SettingsController::class, 'update'])->name('settings.update');
 
 require __DIR__.'/auth.php';

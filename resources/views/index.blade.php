@@ -57,6 +57,42 @@
         </div>
     </section>
 
+    <section class="saas_features_area_two">
+        <div class="container">
+            <div class="sec_title text-center mb_70 wow fadeInUp" data-wow-delay="0.3s">
+                <h2 class="f_p f_size_30 l_height50 f_600 t_color">Our Branches</h2>
+                <p class="f_400 f_size_16">We have our branches located in these four countries</p>
+            </div>
+            <div class="row mb_30">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="saas_features_item text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="{{ asset('img/us-flag.png') }}" alt="" class="img-fluid">
+                        <h4 class="f_size_20 f_p t_color f_500">United States</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="saas_features_item text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="{{ asset('img/uk-flag.png') }}" alt="" class="img-fluid">
+                        <h4 class="f_size_20 f_p t_color f_500">United Kingdom</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="saas_features_item text-center wow fadeInUp" data-wow-delay="0.7s">
+                        <img src="{{ asset('img/china-flag.png') }}" alt="" class="img-fluid">
+                        <h4 class="f_size_20 f_p t_color f_500">China</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="saas_features_item text-center wow fadeInUp" data-wow-delay="0.7s">
+                        <img src="{{ asset('img/germany-flag.jpg') }}" alt="" class="img-fluid">
+                        <h4 class="f_size_20 f_p t_color f_500">Germany</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hr mt_100 mb-0"></div>
+        </div>
+    </section>
+
     <section class="saas_service_area sec_pad">
         <div class="container">
             <div class="row saas_service_item">

@@ -32,7 +32,7 @@
         <header class="header_area">
             <nav class="navbar navbar-expand-lg menu_one menu_eight">
                 <div class="container">
-                    <a class="navbar-brand sticky_logo" href="#"><img src="{{ asset('img/logo2.png') }}" style="width: 250px;" alt="logo"><img src="{{ asset('img/logo.png') }}" style="width: 250px" alt=""></a>
+                    <a class="navbar-brand sticky_logo" href="{{ route('home') }}"><img src="{{ asset('img/logo2.png') }}" style="width: 200px;" alt="logo"><img src="{{ asset('img/logo.png') }}" style="width: 200px" alt=""></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="menu_toggle">
                             <span class="hamburger">
@@ -58,10 +58,10 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget dark_widget company_widget wow fadeInUp" data-wow-delay="0.2s">
-                                <a href="index.html" class="f-logo"><img src="{{ asset('img/logo2.png') }}" style="250px" alt="logo"></a>
+                                <a href="index.html" class="f-logo"><img src="{{ asset('img/logo2.png') }}" style="200px" alt="logo"></a>
                                 <div class="widget-wrap">
                                     <p class="f_400 f_p f_size_15 mb-0 l_height34"><span>Email:</span> <a href="mailto:{{ config('mail.from.address') }}" class="f_400">{{ config('mail.from.address') }}</a></p>
-                                    <p class="f_400 f_p f_size_15 mb-0 l_height34"><span>Phone:</span> <a href="tel:+13143257488" class="f_400">+1 (314) 325 7488</a></p>
+                                    <p class="f_400 f_p f_size_15 mb-0 l_height34"><span>Phone:</span> <a href="tel:{{ settings_phone() }}" class="f_400">{{ settings_phone() }}</a></p>
                                 </div>
                                 <div class="f_social_icon_two">
                                     <a href="#" class="ti-facebook"></a>

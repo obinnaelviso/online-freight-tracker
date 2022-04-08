@@ -18,11 +18,11 @@
             <div class="col-lg-3 pr-0">
                 <div class="contact_info_item">
                     <h6 class="f_p f_size_20 t_color3 f_500 mb_20">Office Address</h6>
-                    <p class="f_400 f_size_15">Port Klang, Malaysia</p>
+                    <p class="f_400 f_size_15">{{ settings_office_address() }}</p>
                 </div>
                 <div class="contact_info_item">
                     <h6 class="f_p f_size_20 t_color3 f_500 mb_20">Contact Info</h6>
-                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Phone:</span> <a href="tel:+13143257488">+1 (314) 325 7488</a></p>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Phone:</span> <a href="tel:{{ settings_phone() }}">{{ settings_phone() }}</a></p>
                     <p class="f_400 f_size_15"><span class="f_400 t_color3">Email:</span> <a href="mailto:{{ config('mail.from.address') }}">{{ config('mail.from.address') }}</a></p>
                 </div>
             </div>

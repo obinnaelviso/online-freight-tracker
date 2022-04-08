@@ -12,8 +12,8 @@
                 </button>
 
                 <!-- Navbar Brand -->
-                <a href="/dashboard" class="navbar-brand ">
-                    <span>{{ config('app.name') }}</span>
+                <a href="/" class="navbar-brand ">
+                    <span>{{ config('app.short_name') }}</span>
                 </a>
 
                 <ul class="nav navbar-nav d-none d-sm-flex border-left navbar-height align-items-center">
