@@ -109,6 +109,32 @@
                     </div>
                 </div>
             </div>
+            <div class="row saas_service_item">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="saas_service_content pr_100 wow fadeInRight" data-wow-delay="0.7s">
+                        <h4 class="f_500 f_p t_color">Massive Shipment All of Over the Country</h4>
+                        <p class="f_p f_400">Our trucks are always on the highway to make sure our customers gets the best experience in all their shipping requests!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="saas_service_img wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="img/trucks.jpeg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row saas_service_item">
+                <div class="col-lg-6">
+                    <div class="saas_service_img wow fadeInLeft" data-wow-delay="0.5s">
+                        <img src="img/air-cargo.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="saas_service_content pr_100 wow fadeInRight" data-wow-delay="0.7s">
+                        <h4 class="f_500 f_p t_color">Fast Delivery by Air</h4>
+                        <p class="f_p f_400">We offer speed delivery across the continents through our cargo airlines for those who have urgent requests.</p>
+                    </div>
+                </div>
+            </div>
             <div class="row flex-row-reverse saas_service_item">
                 <div class="col-lg-6">
                     <div class="saas_service_img wow fadeInRight" data-wow-delay="0.4s">
