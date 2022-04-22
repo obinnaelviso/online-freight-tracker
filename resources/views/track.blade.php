@@ -20,7 +20,7 @@
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="{{ $invoice->progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $invoice->progress }}%"></div>
                           </div><br>
                         <div id="invoice">
-                            <table class="table table-bordered table-responsive mb-3">
+                            <table class="table table-bordered mb-3">
                                 <thead>
                                 <tr>
                                     <th scope="col">Sender's Details</th>
