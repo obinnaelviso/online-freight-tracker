@@ -9,7 +9,7 @@ is the file you need to edit to change the look of the
 template.
 ---------------------------------------------------- */
 /*=====================================================================
-@Template Name: 
+@Template Name:
 @Author: Md. Shahadat Hussain
 @Developed By: Rony
 @Developer URL: https://themeforest.net/user/droitthemes
@@ -7273,7 +7273,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 /*=================== pricing_area_two css ===============*/
 .pricing_area_two {
-  background: #f6f7fa;
+  /* background: #f6f7fa; */
+  background-image: url('../img/package-delivery.jpg');
+  background-size: cover;
 }
 
 .price_content_two .price_item .tag {
