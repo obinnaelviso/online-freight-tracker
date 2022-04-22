@@ -7274,8 +7274,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 /*=================== pricing_area_two css ===============*/
 .pricing_area_two {
   /* background: #f6f7fa; */
-  background-image: url('../img/package-delivery.jpg');
+  background-image: url('../img/fxlcs-van.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .price_content_two .price_item .tag {

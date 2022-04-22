@@ -149,6 +149,20 @@
                     </div>
                 </div>
             </div>
+            <div class="row flex-row-reverse saas_service_item">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="saas_service_content pl_100 wow fadeInLeft" data-wow-delay="0.6s">
+                        <h4 class="f_500 f_p t_color">High-speed vans</h4>
+                        <p class="f_p f_400">We have our new and highspeed vans that travel longs distance to deliver your package anywhere in the world.</p>
+                        <a href="{{ route('about') }}" class="gr_btn"><span class="text">Learn More</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="saas_service_img wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/fxlcs-van.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

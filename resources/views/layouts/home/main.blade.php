@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="{{ asset('vendors/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/slick/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/scroll/jquery.mCustomScrollbar.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive2.css') }}">
     @stack('head')
 </head>
 
