@@ -13,14 +13,14 @@
 <section class="pricing_area_two sec_pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 mb-3">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" style="background-image: url('/img/logo2-t-10.png'); background-size: contain; background-position: center center; background-repeat: repeat;">
                         <div class="progress" style="height: 50px; border-radius: 30px">
                             <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="{{ $invoice->progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $invoice->progress }}%"></div>
                           </div><br>
                         <div id="invoice">
-                            <table class="table table-bordered mb-3">
+                            <table class="table table-bordered table-responsive mb-3">
                                 <thead>
                                 <tr>
                                     <th scope="col">Sender's Details</th>
@@ -34,7 +34,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-responsive">
                                 <thead>
                                     <tr>
                                         <th colspan="4">Shipment Details</th>
@@ -146,7 +146,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body w-100" style="background-image: url('/img/logo2-t-10.png'); background-size: contain; background-position: center center; background-repeat: repeat;">
                         <img src="{{ asset('/img/qr-code.png') }}" class="img-fluid"/>
                         <a href="/" class="btn btn-lg btn-primary"> Track another package <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     </div>
