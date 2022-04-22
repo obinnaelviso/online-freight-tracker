@@ -148,7 +148,7 @@
                 <div class="card">
                     <div class="card-body w-100" style="background-image: url('/img/logo2-t-10.png'); background-size: contain; background-position: center center; background-repeat: repeat;">
                         <img src="{{ asset('/img/qr-code.png') }}" class="img-fluid"/>
-                        <a href="/" class="btn btn-lg btn-primary"> Track another package <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        <a href="/" class="btn btn-primary"> Track another package <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

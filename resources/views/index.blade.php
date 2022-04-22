@@ -20,7 +20,7 @@
         </div>
         <img class="shap_img" src="img/home-10/shape.png" alt="">
         <div class="animation_img wow fadeInUp" data-wow-delay="0.3s">
-            <img src="{{ asset('img/package-delivery.jpg') }}" alt="">
+            <img src="{{ asset('img/package-delivery.jpg') }}" class="img-fluid" alt="">
         </div>
     </section>
 
