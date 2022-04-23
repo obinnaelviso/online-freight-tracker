@@ -16,9 +16,48 @@
             <div class="col-md-8 mb-3">
                 <div class="card">
                     <div class="card-body" style="background-image: url('/img/logo2-t-10.png'); background-size: contain; background-position: center center; background-repeat: repeat;">
-                        <div class="progress" style="height: 50px; border-radius: 30px">
-                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="{{ $invoice->progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $invoice->progress }}%"></div>
-                          </div><br>
+                        @if($invoice->status_id)
+                            <div class="mb-3">
+                                <strong class="text-dark">Scheduled Delivery by</strong>
+                                <div class="d-flex">
+                                    <div class="border-right px-3">
+                                        <h5 class="text-muted mb-0">
+                                            {{ strtoupper($invoice->updated_at->englishDayOfWeek) }}
+                                        </h5>
+                                        <div>
+                                            <div class="d-flex">
+                                                <strong class="display-4 font-weight-bold mr-1">
+                                                    {{ $invoice->updated_at->day }}
+                                                </strong>
+                                                <span class="text-muted align-self-end date-line-height pb-2">
+                                                    {{ strtoupper($invoice->updated_at->englishMonth) }}<br>
+                                                    {{ $invoice->updated_at->year }}. <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-2 align-self-end">
+                                        <div>by</div>
+                                        <h5><strong>{{ $invoice->updated_at->format('h:ia') }} <small><i class="fa fa-info-circle" aria-hidden="true"></i></small></strong></h5>
+                                    </div>
+                                </div>
+                                <div class="mb-2"><small><strong>{{ config('app.short_name') }} Tracking Plus Available</strong></small></div>
+                                <div class="progress mb-2" style="width: 300px">
+                                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="{{ $invoice->progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $invoice->progress }}%"></div>
+                                </div>
+                                <h4 class="text-success">
+                                    <strong><i class="fa fa-check-circle" aria-hidden="true"></i> Delivered, Left with Individual</strong>
+                                </h4>
+                                <div class="small text-muted date-line-height">
+                                    {{ $invoice->updated_at->format('F j, Y').' at '. $invoice->updated_at->format('h:ia') }}<br>
+                                    {{ strtoupper($invoice->destination) }}.
+                                </div>
+                            </div>
+                        @else
+                            <div class="progress" style="height: 50px; border-radius: 30px">
+                                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="{{ $invoice->progress }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $invoice->progress }}%"></div>
+                            </div><br>
+                        @endif
                         <div id="invoice">
                             <table class="table table-bordered mb-3">
                                 <thead>

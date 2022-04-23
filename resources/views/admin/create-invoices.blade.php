@@ -10,7 +10,7 @@
             <form method="post" action="{{ $invoice->id ? route('invoices.edit', $invoice->id) : route('invoices.create') }}">
                 @csrf @if($invoice->id) @method('put') @endif
                 <div class="form-row">
-                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="col-12 col-md-6 mb-3">
                         <label for="invoice-no">Invoice Number #</label>
                         <input type="text"
                                 class="form-control"
@@ -20,7 +20,19 @@
                                 value="{{ old('invoice_no', $invoice->invoice_no) }}">
                         @error('invoice_no')<div class="invalid-feedback">{{ $message }}</div>@enderror
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="col-12 col-md-6 mb-3">
+                        <label for="email">Receiver Email Address</label>
+                        <input type="text"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="johndoe@example.com"
+                                value="{{ old('email', $invoice->email) }}">
+                        @error('email')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12 col-md-6 mb-3">
                         <label for="origin">Origin</label>
                         <input type="text"
                                 class="form-control"
@@ -29,7 +41,7 @@
                                 value="{{ old('origin', $invoice->origin) }}">
                         @error('origin')<div class="invalid-feedback">{{ $message }}</div>@enderror
                     </div>
-                    <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="col-12 col-md-6 mb-3">
                         <label for="destination">Destination</label>
                         <input type="text"
                                 class="form-control"

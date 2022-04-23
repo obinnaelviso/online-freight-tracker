@@ -45,12 +45,22 @@
                                         <td>{{ $invoice->delivery_cost }}</td>
                                         <td>{{ $invoice->pickup_date }}</td>
                                         <td>
+                                            @if ($invoice->status_id)
+                                                <div class="badge badge-success">Completed</div>
+                                            @else
+                                                <div class="badge badge-warning">Pending</div>
+                                            @endif
+                                        </td>
+                                        <td>
                                             <a class="btn btn-warning" href="{{ route('invoices.edit', $invoice->id) }}">
                                                 Edit
                                             </a>
-                                            <a href="{{ route('invoices.histories', $invoice->id) }}" class="btn btn-primary">Travel History</a>
-                                            <a href="{{ route('invoices.preview', $invoice->id) }}" class="btn btn-secondary" target="_blank">Preview</a>
-                                            <a href="{{ route('invoices.export', $invoice->id) }}" class="btn btn-success">Download</a>
+                                            <a href="{{ route('invoices.histories', $invoice->id) }}" class="btn btn-primary mb-2">Travel History</a>
+                                            <a href="{{ route('invoices.preview', $invoice->id) }}" class="btn btn-secondary mb-2" target="_blank">Preview</a>
+                                            <a href="{{ route('invoices.export', $invoice->id) }}" class="btn btn-dark mb-2">Download</a>
+                                            @if(!$invoice->status_id)
+                                                <a href="{{ route('invoices.complete', $invoice->id) }}" class="btn btn-success">Mark as Complete</a>
+                                            @endif
                                         </td>
                                     </tr>
                                 @endforeach

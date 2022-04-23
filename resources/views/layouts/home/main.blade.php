@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('vendors/scroll/jquery.mCustomScrollbar.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     @stack('head')
 </head>
 
