@@ -3,6 +3,7 @@
 <br>
 
 Here is a short description of your delivery:<br>
+
 ------------------------------------------------------
 
 <table>
@@ -30,10 +31,15 @@ Here is a short description of your delivery:<br>
     </tbody>
 </table>
 <br>
+@component('mail::button', ['url' => route('track', $invoice->id)])
+View More
+@endcomponent
+
 Please contact {{ config('app.name') }} ({{ config('app.short_name') }}) support, for more information on how you can
 receive it.
 
 <br>
+
 Thanks,<br>
 {{ config('app.short_name') }}
 @endcomponent
