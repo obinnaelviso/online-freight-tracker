@@ -1,8 +1,10 @@
 @component('mail::message')
 # Your Package with Tracking Number {{ $invoice->invoice_no }} has been delivered.
 <br>
-Here is a short description of your delivery:
+
+Here is a short description of your delivery:<br>
 ------------------------------------------------------
+
 <table>
     <tbody>
         <tr>
